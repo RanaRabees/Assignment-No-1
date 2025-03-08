@@ -1,0 +1,227 @@
+* {
+    margin: 0%;
+    padding: 0%;
+    font-family: cursive;
+    box-sizing: border-box;
+}
+
+.main-div {
+    margin: 5px;
+    text-align: center;
+}
+
+.scrollbar {
+    overflow-x: auto;
+    white-space: nowrap;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+}
+
+input {
+    width: 100px;
+}
+
+.wrench {
+    width: 50px;
+    height: 50px;
+}
+
+.wrench-td {
+    text-align: center !important;
+}
+
+th,
+td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+}
+
+th {
+    background-color: #f2f2f2;
+}
+
+.pagination {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.pagination div,
+.pagination button {
+    margin-bottom: 5px;
+}
+
+.pagination button {
+    padding: 8px 16px;
+    margin: 0 5px;
+    border: 1px solid #ddd;
+    background-color: #fff;
+    cursor: pointer;
+}
+
+.pagination button:disabled {
+    background-color: #eee;
+    cursor: not-allowed;
+}
+
+.filter-row {
+    margin-bottom: 10px;
+}
+
+.filter-row input,
+.filter-row select {
+    padding: 8px;
+    margin: 0 5px;
+}
+
+button {
+    padding: 8px 16px;
+    margin: 0 5px;
+    border: 1px solid #ddd;
+    background-color: #fff;
+    cursor: pointer;
+}
+
+.wrench_a {
+    background-color: #f00;
+    color: #fff;
+}
+
+.wrench_b {
+    background-color: rgb(255, 0, 234);
+    color: #fff;
+}
+
+.show-entries {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+    justify-content: center;
+}
+
+.show-entries select {
+    padding: 8px;
+    margin-left: 5px;
+}
+
+.navigation-buttons {
+    display: flex;
+    align-items: center;
+}
+
+.navigation-buttons button {
+    padding: 8px 16px;
+    margin: 0 5px;
+    color: #ddd;
+    border: 1px solid #ddd;
+    background-color: #998b8b;
+    cursor: pointer;
+}
+.navigation-buttons .pagination-no{
+    background-color: #0b4fb6;
+}
+@media (max-width: 768px) {
+
+    table,
+    thead,
+    tbody,
+    th,
+    td,
+    tr {
+        display: block;
+    }
+
+    th {
+        text-align: center;
+    }
+
+    thead tr {
+        position: absolute;
+        top: -9999px;
+        left: -9999px;
+    }
+
+    tr {
+        border: 1px solid #ccc;
+        margin-bottom: 10px;
+    }
+
+    td {
+        border: none;
+        border-bottom: 1px solid #eee;
+        position: relative;
+        padding-left: 50%;
+        text-align: left;
+    }
+
+    td:before {
+        position: absolute;
+        top: 6px;
+        left: 6px;
+        width: 45%;
+        padding-right: 10px;
+        white-space: nowrap;
+        text-align: left;
+        font-weight: bold;
+    }
+
+
+    td:nth-of-type(1):before {
+        content: "Wrench:";
+    }
+
+    td:nth-of-type(2):before {
+        content: "Create Date:";
+    }
+
+    td:nth-of-type(3):before {
+        content: "Sample Id:";
+    }
+
+    td:nth-of-type(4):before {
+        content: "Member Type:";
+    }
+
+    td:nth-of-type(5):before {
+        content: "Email:";
+    }
+
+    td:nth-of-type(6):before {
+        content: "Status:";
+    }
+
+    td:nth-of-type(7):before {
+        content: "Username:";
+    }
+
+    td:nth-of-type(8):before {
+        content: "First Name:";
+    }
+
+    td:nth-of-type(9):before {
+        content: "Last Name:";
+    }
+
+    td:nth-of-type(10):before {
+        content: "Address 1:";
+    }
+
+    td:nth-of-type(11):before {
+        content: "City:";
+    }
+
+    td:nth-of-type(12):before {
+        content: "State:";
+    }
+
+    input {
+        width: 100%;
+        box-sizing: border-box;
+    }
+}
